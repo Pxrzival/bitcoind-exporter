@@ -18,13 +18,19 @@ var rpcClient = jsonrpc.NewClientWithOpts(computeAddress(), &jsonrpc.RPCClientOp
 
 // Reads the RPC cookie for authentication
 func computeCookieAuth() string {
-	cookie, err := ioutil.ReadFile(config.C.RPCCookieFile)
+	cookieFilePath := config.C.RPCCookieFile
+	if cookieFilePath == "" {
+		panic("RPCCookieFile path is not set in the configuration")
+	}
+
+	cookie, err := ioutil.ReadFile(cookieFilePath)
 	if err != nil {
-		panic(fmt.Sprintf("Failed to read RPC cookie file: %v", err))
+		panic(fmt.Sprintf("Failed to read RPC cookie file from '%s': %v", cookieFilePath, err))
 	}
 	// The cookie file typically contains the format: <username>:<password>
 	return strings.TrimSpace(string(cookie))
 }
+
 
 // Computes the RPC server address
 func computeAddress() string {

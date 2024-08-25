@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/Pxrzival/bitcoind-exporter/config"
-	"github.com/ybbus/jsonrpc/v3"
+	"https://github.com/Pxrzival/bitcoind-exporter/config"
+	"https://github.com/ybbus/jsonrpc/v3"
 )
 
 // Create RPC client with cookie-based authentication

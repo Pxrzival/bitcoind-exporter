@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/Pxrzival/bitcoind-exporter/config"
-	prometheus "github.com/Pxrzival/bitcoind-exporter/prometheus/metrics"
-	goprom "github.com/prometheus/client_golang/prometheus"
+	"https://github.com/Pxrzival/bitcoind-exporter/config"
+	prometheus "https://github.com/Pxrzival/bitcoind-exporter/prometheus/metrics"
+	goprom "https://github.com/prometheus/client_golang/prometheus"
 
-	"github.com/Pxrzival/bitcoind-exporter/util"
-	"github.com/sirupsen/logrus"
+	"https://github.com/Pxrzival/bitcoind-exporter/util"
+	"https://github.com/sirupsen/logrus"
 )
 
 var log = logrus.WithFields(logrus.Fields{

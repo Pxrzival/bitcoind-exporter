@@ -22,7 +22,7 @@ ENV PATH="/usr/local/go/bin:$PATH"
 WORKDIR /app
 
 # Clone the repository
-RUN git clone https://github.com/Pxrzival/bitcoind-exporter.git .
+COPY . .
 
 # Compile the project
 RUN go build -o bitcoind-exporter

@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"https://github.com/Pxrzival/bitcoind-exporter/config"
+	"https://github.com/Primexz/bitcoind-exporter/config"
 	"https://github.com/ybbus/jsonrpc/v3"
 )
 

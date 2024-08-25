@@ -3,10 +3,10 @@ package main
 import (
 	"runtime"
 
-	"github.com/Primexz/bitcoind-exporter/config"
-	"github.com/Primexz/bitcoind-exporter/fetcher"
-	"github.com/Primexz/bitcoind-exporter/prometheus"
-	"github.com/Primexz/bitcoind-exporter/zmq"
+	"github.com/Pxrzival/bitcoind-exporter/config"
+	"github.com/Pxrzival/bitcoind-exporter/fetcher"
+	"github.com/Pxrzival/bitcoind-exporter/prometheus"
+	"github.com/Pxrzival/bitcoind-exporter/zmq"
 	log "github.com/sirupsen/logrus"
 	prefixed "github.com/x-cray/logrus-prefixed-formatter"
 )
